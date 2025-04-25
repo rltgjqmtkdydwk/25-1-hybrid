@@ -1,0 +1,130 @@
+<!-- --------------
+
+학번 : 202214048
+
+이름 : 김은총
+
+과제설명 : hw4_1.html
+자기 소개 부분과 시간표 부분으로 나눠서 landscape일 경우에는 시간표가 오른쪽으로, portrait일 경우는 아래로 표시.
+
+----------------- -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        background-color: #96D4D4;
+        color: black;
+    }
+   @media only screen and (min-width: 501px) and (orientation: portrait) { /* 세로보기모드 */
+        body {
+            display: flex;
+            flex-direction: column;
+        } 
+        .self { background-color: navy; color: white; }
+        .tt { background-color: yellowgreen; }
+    }
+
+    @media only screen and (min-width: 501px) and (orientation: landscape) { /* 가로보기모드 */
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        .self { background: lightyellow; color: black; }
+        .tt { background-color: purple; color: white; }
+    }
+</style>
+</head>
+<body>
+    <div class="self">
+	<h3>김은총</h3>
+	<hr>
+	<p> > 자기소개 </p>
+	<b> IT융합자율학부 소프트웨어융합전공 </b><br>
+	<i> 3학년입니다. </i><br>
+	<u> 하이브리드 앱 프로그래밍을 수강하고 하이브리드형 인재가 되겠습니다. </u><br>
+	개설된다면 크로스 플랫폼 앱 개발도 배우고 싶습니다.<br>
+</div>
+
+<div class="tt">
+<p> > 현재 수강하고 있는 과목 중 3개에 대한 주간 시간표 </p>
+<table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>시간</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00</td>
+        <td></td>
+        <td></td>
+        <td rowspan="3">확률과랜덤변수<br>6405</td>
+        <td></td>
+        <td rowspan="3">고급 Java프로그래밍<br>6202</td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>12:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="2">하이브리드<br>앱 프로그래밍<br>6202</td>
+      </tr>
+
+      <tr>
+        <td>13:30</td>
+        <td rowspan="2">프론트엔드<br>개발<br>6202</td>
+        <td rowspan="2">알고리즘<br>6201</td>
+        <td rowspan="2">프론트엔드<br>개발<br>6202</td>
+        <td rowspan="2">알고리즘<br>6201</td>
+      </tr>
+
+      <tr></tr>
+  
+      <tr>
+        <td>15:00</td>
+        <td></td>
+        <td rowspan="2">딥러닝프레임워크<br>6405</td>
+        <td></td>
+        <td rowspan="2">딥러닝프레임워크<br>6405</td>
+        <td></td>
+      </tr>
+
+      <tr></tr>
+  
+      <tr>
+        <td>16:30</td>
+        <td></td>
+        <td>컴퓨터비전<br>6405</td>
+        <td></td>
+        <td>컴퓨터비전<br>6405</td>
+        <td></td>
+      </tr>
+  
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
