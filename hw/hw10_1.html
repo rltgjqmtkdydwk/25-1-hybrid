@@ -1,0 +1,39 @@
+<!-- --------------
+
+학번 : 202214048
+
+이름 : 김은총
+
+과제설명 : 메소드로 객체 조작 및 생성
+
+----------------- -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>hw10_1</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#txt').text($('#wrap img').attr('src')); //id=wrap 요소의 img 태그의 src 속성의 값을 불러와 id=txt에 텍스트로 생성
+        $('#wrap img').width(200);  //id=wrap 요소의 img의 너비를 200으로 변경
+        $('#box img').removeAttr('border'); //id=box 요소의 img의 border를 제거
+    });
+  </script>
+</head>
+<body>
+
+<h1>객체 조작 및 생성</h1>
+
+<p id="wrap">
+    <img src="hw10_1_math_img_1.jpg" alt="가위" width="100" />
+</p>
+
+<p id="txt"></p>
+
+<p id="box">
+    <img src="hw10_1_math_img_3.jpg" alt="보" width="100" border="2"/>
+</p>
+</body>
+</html>

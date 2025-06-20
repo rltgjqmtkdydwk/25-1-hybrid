@@ -1,0 +1,37 @@
+<!-- --------------
+
+학번 : 202214048
+
+이름 : 김은총
+
+과제설명 : each 메소드를 이용하여 m의 하위 li태그의 내용을 순서대로 리스트3, 리스트2, 리스트1로 변경
+
+----------------- -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>hw10_3</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('#m li').each(function(index){
+            $(this).text("리스트"+(index + 1));
+        });
+    });
+  </script>
+</head>
+<body>
+    <ul id="m">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+    </ul>
+    <ul id="n">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+    </ul>
+</body>
+</html>

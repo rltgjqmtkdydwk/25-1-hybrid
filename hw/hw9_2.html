@@ -1,0 +1,38 @@
+<!-- --------------
+
+학번 : 202214048
+
+이름 : 김은총
+
+과제설명 : not 방식를 이용하여 첫번째 li요소만 제외한 li의 배경색을 노란색으로 적용하여라
+
+----------------- -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>hw9_2</title>
+
+  <!-- jQuery CDN 방식으로 연결 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // DOM 트리 로드 완료 후 실행
+    $(document).ready(function() {
+      // myList 내부의 li 요소 중 첫 번째 항목을 제외한 나머지 모든 항목을 선택하여 배경색 노랑으로 설정
+      $('#myList li:not(:first)').css('background-color', 'yellow');
+    });
+  </script>
+</head>
+<body>
+
+<ul id="myList">
+  <li>내용1</li>
+  <li>내용2</li>
+  <li>내용3</li>
+  <li>내용4</li>
+</ul>
+
+</body>
+</html>

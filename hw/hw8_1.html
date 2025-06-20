@@ -1,0 +1,57 @@
+<!-- --------------
+
+학번 : 202214048
+
+이름 : 김은총
+
+과제설명 : hw8_1.html
+Jquery Mobile 인풋 컨트롤
+
+----------------- -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/> 
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="page1">
+<!-- header -->
+<div data-role="header"><h1>header 영역</h1></div>
+<div data-role="content">
+    <!-- 입력상자 그룹화 -->
+    <div data-role="fieldcontain">
+        <!-- input 태그 text 속성 -->
+        <input type="text" name="return" id="txt1" />
+        <!-- input 태그 search 속성 -->
+        <input type="search" name="input_search" id="input_search" placeholder="키워드를 입력하세요" />
+        <!-- 슬라이더 -->
+        <input type="range"name="score" id="score1"value="34"min="0" max="100" />
+        <!-- 스위치 -->
+        <select name="gender" id="gender1" data-role="slider"> <option value="male">남자</option> <option value="female">여자</option> </select>
+        <!-- 체크상자버튼 -->
+        <div data-role="fieldcontain"> 
+            <legend>연락매체</legend>
+            <fieldset data-role="controlgroup">
+                <input type="checkbox" name="contact1" id="contact1" value="1"/> 
+                <label for="contact1">e-mail</label> 
+                <input type="checkbox"name="contact2"id="contact2"value="2" checked="checked"/> 
+                <label for="contact2">phone</label>
+            </fieldset> 
+        </div>
+        <!-- 대화상자형 선택 메뉴 -->
+        <select name="contact_type" id="contact_type" data-native-menu="false" multiple="multiple"> 
+            <option value=" " data-placeholder="true">복수선택하세요</option> 
+            <option value="type1">인터넷</option> <option value="type2">phone</option>
+        </select>
+    </div>
+</div>
+<!-- footer -->
+<div data-role="footer" data-position="fixed"><h1>footer 영역</h1></div>
+</div>
+</body>
+</html>

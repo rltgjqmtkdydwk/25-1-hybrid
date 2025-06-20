@@ -1,0 +1,38 @@
+<!-- --------------
+
+학번 : 202214048
+
+이름 : 김은총
+
+과제설명 : 위치 필터 선택자를 이용해 "내용3"이 표시된 li만 선택하여 배경을 노란색으로 적용하여라
+
+----------------- -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>hw9_1</title>
+
+  <!-- jQuery CDN 방식으로 연결 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // DOM 트리 로드 완료 후 실행
+    $(document).ready(function() {
+      // myList 내부의 li 요소 중 3번째 항목(index 2)을 선택하여 배경색 노랑으로 설정
+      $('#myList li:eq(2)').css('background-color', 'yellow');
+    });
+  </script>
+</head>
+<body>
+
+<ul id="myList">
+  <li>내용1</li>
+  <li>내용2</li>
+  <li>내용3</li>
+  <li>내용4</li>
+</ul>
+
+</body>
+</html>
